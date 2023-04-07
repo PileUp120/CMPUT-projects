@@ -1,0 +1,15 @@
+(a). h*(n) is defined as the true lowest cost of getting from node n to the goal node. A heuristic is said to be consistent if it is always less than or equal to the cost of getting to any 
+goal node from the current node plus the cost of getting to the current node, i.e. h(n) <= cost(n,s) + h(s). Also a part of the definition is that the cost of getting from the goal node to the goal node must be 0, i.e. h(G) = 0.
+Let h(start) be the cost of getting from the starting node to the goal, h(start) >= h(n) >= h(G) should be true, since the cost of getting from each succesive node along the path to the goal must
+decrease. Therefore h*(n) <= c(n,n+1) + h(n+1) must be true for any n, because h*(n) is to be the optimal route of getting to a goal. Thus optimal heuristics are always consistent
+
+(b). A heuristic is admissible if it is always less than or equal to the optimal heuristic, ie h(n) <= h*(n). If all of h1(n)...hk(n) are admissible, then every one of h1(n)...hk(n) <= h*(n), which 
+also implies that max(h1(n)...hk(n)) <= h*(n). 
+
+(c). If all of h1(n)...hk(n) are consistent then that means for all of h1(n)...hk(n) <= c(n,s) + h(s), which implies that max(h1(n)...hk(n)) <= c(n,s) + h(s).
+
+(d). Counter case: let any two of h1(n)...hk(n) = h*(n). Then the sum of those two will equal 2 × h*(n), which will lead (h1(n) + ... + hk(n)) to be greater than h*(n). Thus the claim is false. 
+
+(e). (h1(n) + ... + hk(n)) / k is the average of the sum of all of h1(n)...hk(n), from the rule of averages, an average of a set of values is always between the largest value in the set
+and the smallest value in the set, i.e. min(h1(n)...hk(n)) <= (h1(n) + ... + hk(n)) / k <= max(h1(n)...hk(n)). From the proof in part (b), the max(h1(n)...hk(n)) is admissible, and since 
+(h1(n) + ... + hk(n)) / k <= max(h1(n)...hk(n)), therefore (h1(n) + ... + hk(n)) / k <= h*(n). 

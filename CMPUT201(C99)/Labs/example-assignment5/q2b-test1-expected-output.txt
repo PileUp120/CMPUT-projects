@@ -1,0 +1,4 @@
+Enter first string
+Enter second string
+
+Invalid input!

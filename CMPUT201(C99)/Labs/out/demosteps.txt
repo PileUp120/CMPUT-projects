@@ -1,0 +1,9 @@
+> ls -s -si
+> ls -s -si > ls_out.txt
+> gcc -std=c99 -Wall -o -hello -hello.c
+> ./hello
+> tar cfv lab1submit.tar hello.c ls_com.txt ls_out.txt
+> mkdir test
+> mv lab1submit.tar test/
+> cd test
+> tar xvf lab1submit.tar

@@ -1,0 +1,6 @@
+Script started on 2022-01-24 00:48:53-07:00 [TERM="xterm-256color" TTY="/dev/pts/53" COLUMNS="80" LINES="24"]
+mmazad@ohaton:~/c455/assignment1_mmazad>gogui-regress "python Go0.py" public-tests-nogo.gtp
+mmazad@ohaton:~/c455/assignment1_mmazad>exit
+exit
+
+Script done on 2022-01-24 00:49:12-07:00 [COMMAND_EXIT_CODE="0"]

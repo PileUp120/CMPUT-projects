@@ -1,0 +1,150 @@
+CMPUT 350 Lab Exercise 4 (weight 3%)
+
+Tuesday Oct. 6, 15:30-16:50
+
+Rules:
+
+- You can use all course material and man pages, but no other information such
+  as web pages, books, or written notes. Using other information sources
+  during the exercise constitues cheating
+
+- Your programs must compile without warning using
+
+  g++ -Wall -Wextra -std=c++17 -g -O ...
+
+  In case there are compiler warnings or errors, marks will be deducted
+
+- Test your programs with different values. For now, the speed of your program
+  is irrelevant. So don't spend time on optimization
+
+- Your programs must be well structured and documented. Use ctrl-x t in Emacs
+  to pretty-print it. Marks are assigned to functionality, program appearance,
+  and comments
+
+- In case your program hangs, use ctrl-c to terminate it
+
+- Remember that you need to include the appropriate header files.  To find out
+  which ones you need for specific functions such as printf, use then man
+  command
+
+Submit these files via eclass (lab4):
+
+   Rational.h Rational.cpp main.cpp
+
+=========================================================================
+
+In this exercise you will implement a rational number type that is meant as an
+exact arithmetic replacement for rounding-error-prone floating point
+types. Rational numbers are represented as two integer variables: numerator
+num and denominator den > 0. The rational number they represent is num/den
+
+class Rational
+{
+public:
+
+  ...
+
+private:
+  // only data
+  int num, den;
+};
+
+At all times, den must be > 0. In this exercise we won't deal with arithmetic
+overflow or simplifying rational numbers by dividing num,den by their greatest
+common divisor. However, division by 0 must be checked with an assertion, and
+operator== must work correctly, i.e. two rational numbers are equal if the
+ratios represent the same value (e.g., 2/4 == 4/8)
+
+Declare operators and methods in Rational.h and implement all of them in
+Rational.cpp so that the following code works:
+
+int main()
+{
+  Rational u;         // value 0
+  Rational v(2);      // value 2
+  Rational w(-3, -4); // value 3/4
+
+  Rational x(v);
+  Rational y;
+  y = w;
+
+  Rational a = x;
+  Rational b = y;
+  Rational c = ++++a;
+  Rational d = b++;
+  
+  cout << "u=" << u << endl;
+  cout << "v=" << v << endl;
+  cout << "w=" << w << endl;
+  cout << "x=" << x << endl;
+  cout << "y=" << y << endl;
+
+  cout << "a=" << a << endl;
+  cout << "b=" << b << endl;
+  cout << "c=" << c << endl;
+  cout << "d=" << d << endl;
+
+  cout << "result1=" << u + v - w / x * y
+       << " result2=" << w + x
+       << endl;
+
+  if (x == x && x != y) {
+    cout << "==,!= work" << endl;
+  } else {
+    cout << "==,!= don't work" << endl;
+  }
+
+  if (x == v) {
+    cout << "CC works" << endl;
+  } else {
+    cout << "CC doesn't work" << endl;
+  }
+
+  if (y != w) {
+    cout << "AO doesn't work" << endl;
+  } else {
+    cout << "AO works" << endl;
+  }
+
+  // more test code that checks assertions
+  // ...
+
+  return 0;
+}
+
+/*
+  output:
+  
+  u=[0/1]
+  v=[2/1]
+  w=[3/4]
+  x=[2/1]
+  y=[3/4]
+  a=[4/1]
+  b=[7/4]
+  c=[4/1]
+  d=[3/4]
+  result1=[55/32] result2=[11/4]
+  ==,!= work
+  CC works
+  AO works
+
+*/
+
+ALL operators and methods have to be implemented in Rational.cpp
+
+File main.cpp must contain above test code AND code that triggers division by
+0 and an illegal constructor call (division by 0)
+
+Make sure
+
+  g++ -Wall -Wextra -std=c++17 -g -O ...
+
+doesn't report any warnings or errors, and your program doesn't leak memory
+
+============================================================================
+
+IN CASE ECLASS FAILS PASTE THE FOLLOWING LINE INTO A TERMINAL WITH WORKING
+DIRECTORY CONTAINING YOUR FILES (ONLY ONCE AT THE VERY END BEFORE 16:50!):
+
+(cat Rational.h; echo @@@; cat Rational.cpp; echo @@@; cat main.cpp) | mail -s "350: lab4" mburo@ualberta.ca

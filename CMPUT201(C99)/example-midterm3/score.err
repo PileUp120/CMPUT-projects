@@ -1,0 +1,14 @@
+486 warnings generated.
+Suppressed 486 warnings (486 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+24 warnings generated.
+Suppressed 24 warnings (24 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+29 warnings generated.
+Suppressed 29 warnings (29 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+35 warnings generated.
+Suppressed 35 warnings (35 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
+question4: question4.c:121: main: Assertion `strcmp(buffer2,buffer3) == 0' failed.
+make[1]: *** [Makefile:54: run-question4] Aborted (core dumped)

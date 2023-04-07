@@ -1,0 +1,295 @@
+CMPUT 350 Lab Exercise 3 (marked, weight 3%)
+
+Tuesday Sep. 29, 15:30-16:50
+
+Rules:
+
+- You can use all course material and man pages, but no other information such
+  as web pages, books, or written notes. Using other information sources
+  during the exercise constitues cheating
+
+- Your programs must compile without warning using
+
+  g++ -Wall -Wextra -O -g -std=c++17 ...
+
+  In case there are compiler warnings or errors, marks will be deducted
+
+- Test your programs with different values. For now, the speed of your
+  program is irrelevant. So don't spend time on optimization
+
+- Your programs must be well structured and documented. Use ctrl-x t
+  in Emacs to pretty-print it. Marks are assigned to functionality,
+  program appearance, and comments
+
+- In case your program hangs, use ctrl-c to terminate it
+
+- Remember that you need to include the appropriate header files.
+  To find out which ones you need for specific functions such as printf,
+  use then man command
+
+Submit your solution file AnimalSim.cpp via eclass (Lab 3)
+
+=========================================================================
+
+In file AnimalSim.cpp create a class hierarchy for simulating animal behaviour
+in the wild. Each animal has an x,y location, an alive flag, an age, a print
+function, and an act function which may change the animal's location, create
+at most one new animal ("offspring"), or kill another animal.
+
+The act function in the Animal base-class has the following signature:
+
+   virtual void act(World &w) = 0;
+
+where w is a World that holds an array of Animal pointers which describes the
+current state of the simulation (see below)
+
+The print function prints animal data and has this signature:
+
+   virtual void print() const = 0;
+
+1. Based on your Animal base-class, define
+
+  - Mouse which always walks East  (increments x)
+  - Goose which always flies South (decrements y)
+  - Rabbit which creates one Rabbit each time it acts (at the same location)
+  - Bear which kills a random animal each time it acts. Bears can't kill
+    themselves and can only choose targets among animals that existed at the
+    beginning of the iteration
+
+2. Implement missing code parts (marked with "implement ...")
+
+3. To test your implementation use World::print() which prints the current
+   list of animals to stdout
+
+   In World::print() a loop must call virtual Animal function print() on each
+   animal in turn
+
+   The output format of World::print() is as follows:
+
+     <space> <Animal-Number> animal(s)
+     <space> <Animal-Type> <Location(x-y)> <Age>
+     <space> <Animal-Type> <Location(x-y)> <Age>
+     ...
+
+   E.g. output of simulate(1) for a world containing 6 animals:
+
+   iter 0
+    6 animal(s)
+    Mouse 100 100 0
+    Mouse 50 60 0
+    Goose 90 80 0
+    Goose 10 20 0
+    Rabbit 80 80 0
+    Bear 70 90 0
+
+   iter 1
+    6 animal(s)
+    Mouse 101 100 1
+    Mouse 51 60 1
+    Goose 90 79 1
+    Rabbit 80 80 0
+    Rabbit 80 80 1
+    Bear 70 90 1
+
+   Note that in this simulation the bear killed the second goose in the first
+   step. The order of animals is implementation-specific. What matters is that
+   all animals are accounted for.
+
+   Test your simulation on the starting configuration shown above with 20 steps
+
+Details:
+
+- Familiarize yourself with the public interface of class World
+
+- Newly created animals don't act during the simulation step they were created
+  in
+
+- To create new offspring, w.add_animal(...) needs to be called
+
+- Use const as often as you can
+
+- For functions that don't use their parameters use this construct
+
+    void act(World &) { ... }
+
+  (no parameter name) to avoid compilation warnings
+
+- Paste the code below into file AnimalSim.cpp, and implement and test the
+  missing pieces
+
+<<<<<<<<<<<<<<<<< snip >>>>>>>>>>>>>>>>
+
+#include <cassert>
+#include <cstdlib>
+#include <ctime>
+#include <cstdio>
+
+using namespace std;
+
+struct World; // forward declaration - World& needed in Animal
+
+// Animal base-class
+
+struct Animal
+{
+  // implement ...
+};
+
+
+// simulation environment
+
+struct World
+{
+  // ONLY CHANGE CODE IN BLOCKS DESIGNATED WITH "implement ..." !
+  
+  // init_cap: make room for that many animals initially
+  World(int init_cap = 1)
+    : capacity(init_cap)
+  {
+    assert(capacity > 0);
+    n = 0;
+    op = A = new Animal*[capacity];
+  }
+
+  ~World()
+  {
+    for (int i=0; i < n; ++i) {
+      delete A[i];
+    }
+    delete [] A;
+  }
+
+  // CC and AO not implemented
+  World(const World &) = delete;
+  World &operator=(const World &) = delete;
+
+  // return number of animals
+  int animal_number() const { return n; }
+  
+  // return pointer to random animal
+  Animal *get_random_animal()
+  {
+    assert(n > 0);
+    // note: only approximates uniform distribution (better use C++11 rng facility)
+    return A[random() % n];
+  }
+  
+  // add new animal to array (world now owns it)
+  void add_animal(Animal *p)
+  {
+    assert(op < A + capacity);
+    *op++ = p;
+  }
+
+  // print world state (list of animals)
+  void print() const
+  {
+    // implement ...
+  }
+
+  // execute 'steps' action rounds
+  void simulate(int steps)
+  {
+    remove_dead_animals(); // also sets n
+
+    printf("iter 0\n");
+    print();
+
+    for (int i=0; i < steps && n > 0; ++i) {
+
+      // allocate sufficient space for new offspring
+      make_room_for_offspring();
+
+      // all animals act and have their age incremented
+
+      // implement ...
+
+      // finally, remove dead animals
+      remove_dead_animals();
+
+      printf("iter %d\n", i+1);
+      print();
+    }
+  }
+
+private:
+
+  // helper functions and data members
+
+  // these are implementation details you don't have to understand
+
+  // reserve enough space for the maximum possible number of offspring animals
+  // created in one iteration
+  void make_room_for_offspring()
+  {
+    if (capacity < 2*n) {
+      
+      // we need more space: allocate larger array and copy animal pointers
+      // over
+      capacity = 2*n;
+      Animal **B = new Animal*[capacity];
+      
+      for (int i=0; i < n; ++i) {
+        B[i] = A[i];
+      }
+
+      delete [] A;
+      A = B;
+    }
+
+    op = A+n; // where offspring is stored, initially points right behind animals
+  }
+  
+  // remove all dead animals
+  void remove_dead_animals()
+  {
+    for (Animal **p=A; p < op; ++p) {
+      if (!(*p)->alive) {
+        delete *p;
+        --op;
+        *p = *op; // copy last element
+        --p;      // recheck same position
+      }
+    }
+
+    // update number of animals
+    n = op - A;
+  }
+  
+  // data
+
+  Animal **A;   // array of animal pointers (owner)
+  int n;        // number of animals stored in A (can be < capacity)
+  int capacity; // number of elements in A
+  Animal **op;  // where to store offspring pointers, gets incemented after
+                // adding a new animal  
+};
+
+// implement ... Mouse, Goose, Rabbit, Bear here
+
+int main()
+{
+  /*
+    initialize random number generator with current time (different seed
+    each second)
+    for testing you may want to fix the seed for reproducability
+
+    note: this is old-school random number generation (man random); C++11
+    provides a better random number generation facility
+  */
+  
+  srandom(time(0)); 
+
+  /* test code:
+  
+     populate world with some animals and simulate a few steps
+  */
+
+  // implement ...
+  
+  World w(...);
+  w.add_animal(...);
+  ...
+
+  return 0;
+}

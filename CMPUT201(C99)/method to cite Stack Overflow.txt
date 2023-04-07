@@ -1,0 +1,3 @@
+Stack Overflow citing
+
+"From stack overflow, by <author name><link to their user profile> in thread <link to thread and specific post>"

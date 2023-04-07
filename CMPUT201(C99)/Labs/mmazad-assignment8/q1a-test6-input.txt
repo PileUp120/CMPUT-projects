@@ -1,0 +1,12 @@
+string Monster
+4
+Its a monster mash
+string Graveyard
+4
+Its a graveyard smash
+string did
+4
+He did the mash
+string they
+5
+They did the Monster Mash

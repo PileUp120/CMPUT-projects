@@ -1,0 +1,5 @@
+When using the makefile and running the simul.o execuatable, I got the error that says
+
+cannot execute binary file: Exec format error
+
+so I was unable to experiment with the code 

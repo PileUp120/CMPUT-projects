@@ -1,0 +1,48 @@
+A) Starting with the top-left side, there are no groups of 4 nodes that are maximally connected to each other, neither
+are there 3 nodes that are maximally connected to each other, hence the cliques will be of size 2 at most, thus,
+A abstracts {a,b}
+B abstracts {c,d}
+C abstracts {e,f}
+D abstracts {g}
+E abstracts {h,i}
+F abstracts {j,k}
+G abstracts {l,m}
+H abstracts {n}
+I abstracts {o,p}
+J abstracts {q,r}
+K abstracts {s,t}
+L abstracts {u}
+
+A-B-C-D
+| | | |
+E F G-H
+| |   |
+I-J-K-L
+
+B) 
+i) Let the original graph contain 4^n (4 to the power of n) nodes, if every abstraction level always groups 4 nodes,
+then there must be 4^n-1 nodes in the first abstraction level, and every subsequent abstraction level will further
+decrease the power of 4 by 1. For example if the original graph has 16 nodes, which is 4^2, then4 groups of 4 nodes
+will be made in the next abstraction level which is 4^1. Therefore at the k-th abstraction level there will be 4^n-k
+nodes.
+
+ii) As explained in (i), with each abstraction level the power of 4 decreases by 1, there will be exactly 1 node
+when the power of 4 is equal to 0, that is, at the n-th abstraction level, there will be only one node.
+
+iii) Given that n=2u, it is implied that u=n/2, which means that u is halfway from reducing the starting graph to
+exactly one node. From part (i) at the u-th abstraction level, there will be 4^(n-u), which is 4^(n-n/2), which is
+equal to 4^(n/2), or the square root of (4^n) nodes. Thus at abstraction level u, the number of nodes will be the
+square root of the original number of nodes.
+
+iv) Given that 
+	(1) for two nodes I and J to be connected in clique based abstraction, at least one original node in I must 
+be connected to an original node in J, 
+	(2) for a group of nodes to be abstracted into one node, all of those nodes are maximally connected to each other.
+
+Suppose the opposite, let there be no path from A' to B', this would mean that none of the original nodes that make
+up A' and B', including A and B, are connected to each other, which contradicts that there is a path from A to B.
+Considering the case of A and B, if A and B are not connected to each other, then the abstract nodes which will
+contain A and B, that is A' and B', will not be connected to each other, which would contradict that A' and B' are
+connected to each other.
+Therefore there is a path from A to B if and only if there is a path from A' to B', and if there is a path from A to
+B, there must be a path from A' to B'.

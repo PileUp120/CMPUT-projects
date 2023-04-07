@@ -1,0 +1,776 @@
+Starting new game!
+Black goes first, then white
+Enter 'b' to choose to play black, 'w' to choose white: w
+Enter '1' to choose easy computer opponent, '2' for hard computer opponent: 2
+   0  1  2  3  4  5  6	7
+0  .  .  .  .  .  .  .	.
+1  .  .  .  .  .  .  .	.
+2  .  .  .  .  .  .  .	.
+3  .  .  .  w  b  .  .	.
+4  .  .  .  b  w  .  .	.
+5  .  .  .  .  .  .  .	.
+6  .  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 2, black 2
+Computer making move: [2, 3]
+   0  1  2  3  4  5  6	7
+0  .  .  .  .  .  .  .	.
+1  .  .  .  .  .  .  .	.
+2  .  .  .  b  .  .  .	.
+3  .  .  .  b  b  .  .	.
+4  .  .  .  b  w  .  .	.
+5  .  .  .  .  .  .  .	.
+6  .  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 1, black 4
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: -2 9
+Invalid position: out of bound.
+Enter move: 5 4
+Invalid position: piece doesn't surround line of opponent pieces.
+Enter move: 4 2
+   0  1  2  3  4  5  6	7
+0  .  .  .  .  .  .  .	.
+1  .  .  .  .  .  .  .	.
+2  .  .  .  b  .  .  .	.
+3  .  .  .  b  b  .  .	.
+4  .  .  w  w  w  .  .	.
+5  .  .  .  .  .  .  .	.
+6  .  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 3, black 3
+Computer making move: [5, 1]
+   0  1  2  3  4  5  6	7
+0  .  .  .  .  .  .  .	.
+1  .  .  .  .  .  .  .	.
+2  .  .  .  b  .  .  .	.
+3  .  .  .  b  b  .  .	.
+4  .  .  b  w  w  .  .	.
+5  .  b  .  .  .  .  .	.
+6  .  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 2, black 5
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 4 1
+   0  1  2  3  4  5  6	7
+0  .  .  .  .  .  .  .	.
+1  .  .  .  .  .  .  .	.
+2  .  .  .  b  .  .  .	.
+3  .  .  .  b  b  .  .	.
+4  .  w  w  w  w  .  .	.
+5  .  b  .  .  .  .  .	.
+6  .  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 4, black 4
+Computer making move: [3, 1]
+   0  1  2  3  4  5  6	7
+0  .  .  .  .  .  .  .	.
+1  .  .  .  .  .  .  .	.
+2  .  .  .  b  .  .  .	.
+3  .  b  .  b  b  .  .	.
+4  .  b  w  w  w  .  .	.
+5  .  b  .  .  .  .  .	.
+6  .  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 3, black 6
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 1 3
+   0  1  2  3  4  5  6	7
+0  .  .  .  .  .  .  .	.
+1  .  .  .  w  .  .  .	.
+2  .  .  .  w  .  .  .	.
+3  .  b  .  w  b  .  .	.
+4  .  b  w  w  w  .  .	.
+5  .  b  .  .  .  .  .	.
+6  .  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 6, black 4
+Computer making move: [4, 5]
+   0  1  2  3  4  5  6	7
+0  .  .  .  .  .  .  .	.
+1  .  .  .  w  .  .  .	.
+2  .  .  .  w  .  .  .	.
+3  .  b  .  w  b  .  .	.
+4  .  b  b  b  b  b  .	.
+5  .  b  .  .  .  .  .	.
+6  .  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 3, black 8
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 6 0
+   0  1  2  3  4  5  6	7
+0  .  .  .  .  .  .  .	.
+1  .  .  .  w  .  .  .	.
+2  .  .  .  w  .  .  .	.
+3  .  b  .  w  b  .  .	.
+4  .  b  w  b  b  b  .	.
+5  .  w  .  .  .  .  .	.
+6  w  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 6, black 6
+Computer making move: [0, 3]
+   0  1  2  3  4  5  6	7
+0  .  .  .  b  .  .  .	.
+1  .  .  .  b  .  .  .	.
+2  .  .  .  b  .  .  .	.
+3  .  b  .  b  b  .  .	.
+4  .  b  w  b  b  b  .	.
+5  .  w  .  .  .  .  .	.
+6  w  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 3, black 10
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 2 1
+   0  1  2  3  4  5  6	7
+0  .  .  .  b  .  .  .	.
+1  .  .  .  b  .  .  .	.
+2  .  w  .  b  .  .  .	.
+3  .  w  .  b  b  .  .	.
+4  .  w  w  b  b  b  .	.
+5  .  w  .  .  .  .  .	.
+6  w  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 6, black 8
+Computer making move: [4, 0]
+   0  1  2  3  4  5  6	7
+0  .  .  .  b  .  .  .	.
+1  .  .  .  b  .  .  .	.
+2  .  w  .  b  .  .  .	.
+3  .  w  .  b  b  .  .	.
+4  b  b  b  b  b  b  .	.
+5  .  w  .  .  .  .  .	.
+6  w  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 4, black 11
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 2 4
+   0  1  2  3  4  5  6	7
+0  .  .  .  b  .  .  .	.
+1  .  .  .  b  .  .  .	.
+2  .  w  .  b  w  .  .	.
+3  .  w  .  w  b  .  .	.
+4  b  b  w  b  b  b  .	.
+5  .  w  .  .  .  .  .	.
+6  w  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 7, black 9
+Computer making move: [1, 1]
+   0  1  2  3  4  5  6	7
+0  .  .  .  b  .  .  .	.
+1  .  b  .  b  .  .  .	.
+2  .  b  .  b  w  .  .	.
+3  .  b  .  w  b  .  .	.
+4  b  b  w  b  b  b  .	.
+5  .  w  .  .  .  .  .	.
+6  w  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 5, black 12
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 0 1
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  .  .  .	.
+1  .  w  .  b  .  .  .	.
+2  .  w  .  b  w  .  .	.
+3  .  w  .  w  b  .  .	.
+4  b  w  w  b  b  b  .	.
+5  .  w  .  .  .  .  .	.
+6  w  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 10, black 8
+Computer making move: [2, 2]
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  .  .  .	.
+1  .  w  .  b  .  .  .	.
+2  .  w  b  b  w  .  .	.
+3  .  b  .  b  b  .  .	.
+4  b  w  w  b  b  b  .	.
+5  .  w  .  .  .  .  .	.
+6  w  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 8, black 11
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 5 4
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  .  .  .	.
+1  .  w  .  b  .  .  .	.
+2  .  w  b  b  w  .  .	.
+3  .  b  .  b  w  .  .	.
+4  b  w  w  b  w  b  .	.
+5  .  w  .  .  w  .  .	.
+6  w  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 11, black 9
+Computer making move: [2, 5]
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  .  .  .	.
+1  .  w  .  b  .  .  .	.
+2  .  w  b  b  b  b  .	.
+3  .  b  .  b  b  .  .	.
+4  b  w  w  b  w  b  .	.
+5  .  w  .  .  w  .  .	.
+6  w  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 9, black 12
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 1 4
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  .  .  .	.
+1  .  w  .  b  w  .  .	.
+2  .  w  b  b  w  b  .	.
+3  .  b  .  b  w  .  .	.
+4  b  w  w  b  w  b  .	.
+5  .  w  .  .  w  .  .	.
+6  w  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 12, black 10
+Computer making move: [1, 5]
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  .  .  .	.
+1  .  w  .  b  b  b  .	.
+2  .  w  b  b  b  b  .	.
+3  .  b  .  b  w  .  .	.
+4  b  w  w  b  w  b  .	.
+5  .  w  .  .  w  .  .	.
+6  w  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 10, black 13
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 0 4
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  w  .  .	.
+1  .  w  .  b  w  b  .	.
+2  .  w  b  b  w  b  .	.
+3  .  b  .  b  w  .  .	.
+4  b  w  w  b  w  b  .	.
+5  .  w  .  .  w  .  .	.
+6  w  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 13, black 11
+Computer making move: [0, 5]
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  .  w  b  b  w  b  .	.
+3  .  b  .  b  w  .  .	.
+4  b  w  w  b  w  b  .	.
+5  .  w  .  .  w  .  .	.
+6  w  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 11, black 14
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 3 6
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  .  w  b  b  w  b  .	.
+3  .  b  .  b  w  .  w	.
+4  b  w  w  b  w  w  .	.
+5  .  w  .  .  w  .  .	.
+6  w  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 13, black 13
+Computer making move: [6, 4]
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  .  w  b  b  b  b  .	.
+3  .  b  .  b  b  .  w	.
+4  b  w  w  b  b  w  .	.
+5  .  w  .  .  b  .  .	.
+6  w  .  .  .  b  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 9, black 18
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 0 2
+Invalid position: piece doesn't surround line of opponent pieces.
+Enter move: 6 3
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  .  w  b  b  b  b  .	.
+3  .  b  .  b  b  .  w	.
+4  b  w  w  b  b  w  .	.
+5  .  w  .  .  w  .  .	.
+6  w  .  .  w  b  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 11, black 17
+Computer making move: [6, 1]
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  .  w  b  b  b  b  .	.
+3  .  b  .  b  b  .  w	.
+4  b  b  w  b  b  w  .	.
+5  .  b  .  .  w  .  .	.
+6  w  b  .  w  b  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 9, black 20
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 6 5
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  .  w  b  b  b  b  .	.
+3  .  b  .  b  b  .  w	.
+4  b  b  w  b  b  w  .	.
+5  .  b  .  .  w  .  .	.
+6  w  b  .  w  w  w  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 11, black 19
+Computer making move: [7, 4]
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  .  w  b  b  b  b  .	.
+3  .  b  .  b  b  .  w	.
+4  b  b  w  b  b  w  .	.
+5  .  b  .  .  b  .  .	.
+6  w  b  .  w  b  w  .	.
+7  .  .  .  .  b  .  .	.
+Score: white 9, black 22
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 3 2
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  .  w  b  b  b  b  .	.
+3  .  b  w  b  b  .  w	.
+4  b  b  w  w  b  w  .	.
+5  .  b  .  .  w  .  .	.
+6  w  b  .  w  b  w  .	.
+7  .  .  .  .  b  .  .	.
+Score: white 12, black 20
+Computer making move: [5, 2]
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  .  w  b  b  b  b  .	.
+3  .  b  b  b  b  .  w	.
+4  b  b  b  b  b  w  .	.
+5  .  b  b  .  w  .  .	.
+6  w  b  .  b  b  w  .	.
+7  .  .  .  .  b  .  .	.
+Score: white 8, black 25
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 7 1
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  .  w  b  b  b  b  .	.
+3  .  w  b  b  b  .  w	.
+4  b  w  b  b  b  w  .	.
+5  .  w  b  .  w  .  .	.
+6  w  w  .  b  b  w  .	.
+7  .  w  .  .  b  .  .	.
+Score: white 13, black 21
+Computer making move: [2, 7]
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  .  w  b  b  b  b  .	b
+3  .  w  b  b  b  .  b	.
+4  b  w  b  b  b  b  .	.
+5  .  w  b  .  b  .  .	.
+6  w  w  .  b  b  w  .	.
+7  .  w  .  .  b  .  .	.
+Score: white 10, black 25
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 2 6
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  .  w  w  w  w  w  w	b
+3  .  w  b  b  b  .  b	.
+4  b  w  b  b  b  b  .	.
+5  .  w  b  .  b  .  .	.
+6  w  w  .  b  b  w  .	.
+7  .  w  .  .  b  .  .	.
+Score: white 15, black 21
+Computer making move: [2, 0]
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  b  b  b  b  b  b  b	b
+3  .  b  b  b  b  .  b	.
+4  b  w  b  b  b  b  .	.
+5  .  w  b  .  b  .  .	.
+6  w  w  .  b  b  w  .	.
+7  .  w  .  .  b  .  .	.
+Score: white 8, black 29
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 5 5
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  b  b  w  b  b  b  b	b
+3  .  b  b  w  b  .  b	.
+4  b  w  b  b  w  b  .	.
+5  .  w  b  .  b  w  .	.
+6  w  w  .  b  b  w  .	.
+7  .  w  .  .  b  .  .	.
+Score: white 12, black 26
+Computer making move: [5, 0]
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  b  b  w  b  b  b  b	b
+3  .  b  b  w  b  .  b	.
+4  b  b  b  b  w  b  .	.
+5  b  b  b  .  b  w  .	.
+6  w  w  .  b  b  w  .	.
+7  .  w  .  .  b  .  .	.
+Score: white 10, black 29
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 3 0
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  b  b  w  b  b  b  b	b
+3  w  w  w  w  b  .  b	.
+4  w  b  b  b  w  b  .	.
+5  w  b  b  .  b  w  .	.
+6  w  w  .  b  b  w  .	.
+7  .  w  .  .  b  .  .	.
+Score: white 15, black 25
+Computer making move: [7, 0]
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  b  b  w  b  b  b  b	b
+3  b  w  w  w  b  .  b	.
+4  b  b  b  b  w  b  .	.
+5  b  b  b  .  b  w  .	.
+6  b  b  .  b  b  w  .	.
+7  b  w  .  .  b  .  .	.
+Score: white 10, black 31
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 5 3
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  b  b  w  b  b  b  b	b
+3  b  w  w  w  b  .  b	.
+4  b  b  w  w  w  b  .	.
+5  b  b  b  w  w  w  .	.
+6  b  b  .  b  b  w  .	.
+7  b  w  .  .  b  .  .	.
+Score: white 14, black 28
+Computer making move: [5, 6]
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  b  b  w  b  b  b  b	b
+3  b  w  w  w  b  .  b	.
+4  b  b  w  w  w  b  .	.
+5  b  b  b  b  b  b  b	.
+6  b  b  .  b  b  b  .	.
+7  b  w  .  .  b  .  .	.
+Score: white 10, black 33
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 7 5
+   0  1  2  3  4  5  6	7
+0  .  w  .  b  b  b  .	.
+1  .  w  .  b  b  b  .	.
+2  b  b  w  b  b  b  b	b
+3  b  w  w  w  b  .  b	.
+4  b  b  w  w  w  b  .	.
+5  b  b  b  w  b  b  b	.
+6  b  b  .  b  w  b  .	.
+7  b  w  .  .  b  w  .	.
+Score: white 13, black 31
+Computer making move: [0, 0]
+   0  1  2  3  4  5  6	7
+0  b  w  .  b  b  b  .	.
+1  .  b  .  b  b  b  .	.
+2  b  b  b  b  b  b  b	b
+3  b  w  w  b  b  .  b	.
+4  b  b  w  w  b  b  .	.
+5  b  b  b  w  b  b  b	.
+6  b  b  .  b  w  b  .	.
+7  b  w  .  .  b  w  .	.
+Score: white 9, black 36
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 6 2
+   0  1  2  3  4  5  6	7
+0  b  w  .  b  b  b  .	.
+1  .  b  .  b  b  b  .	.
+2  b  b  b  b  b  b  b	b
+3  b  w  w  b  b  .  b	.
+4  b  b  w  w  b  b  .	.
+5  b  b  w  w  b  b  b	.
+6  b  b  w  w  w  b  .	.
+7  b  w  .  .  b  w  .	.
+Score: white 12, black 34
+Computer making move: [7, 2]
+   0  1  2  3  4  5  6	7
+0  b  w  .  b  b  b  .	.
+1  .  b  .  b  b  b  .	.
+2  b  b  b  b  b  b  b	b
+3  b  w  b  b  b  .  b	.
+4  b  b  b  w  b  b  .	.
+5  b  b  b  w  b  b  b	.
+6  b  b  b  b  w  b  .	.
+7  b  b  b  .  b  w  .	.
+Score: white 6, black 41
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 3 5
+   0  1  2  3  4  5  6	7
+0  b  w  .  b  b  b  .	.
+1  .  b  .  b  b  b  .	.
+2  b  b  b  b  b  b  b	b
+3  b  w  w  w  w  w  b	.
+4  b  b  b  w  w  w  .	.
+5  b  b  b  w  b  w  b	.
+6  b  b  b  b  w  w  .	.
+7  b  b  b  .  b  w  .	.
+Score: white 14, black 34
+Computer making move: [6, 6]
+   0  1  2  3  4  5  6	7
+0  b  w  .  b  b  b  .	.
+1  .  b  .  b  b  b  .	.
+2  b  b  b  b  b  b  b	b
+3  b  w  w  b  w  w  b	.
+4  b  b  b  w  b  w  .	.
+5  b  b  b  w  b  b  b	.
+6  b  b  b  b  b  b  b	.
+7  b  b  b  .  b  w  .	.
+Score: white 9, black 40
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 1 2
+   0  1  2  3  4  5  6	7
+0  b  w  .  b  b  b  .	.
+1  .  b  w  b  b  b  .	.
+2  b  b  w  w  b  b  b	b
+3  b  w  w  b  w  w  b	.
+4  b  b  b  w  b  w  .	.
+5  b  b  b  w  b  b  b	.
+6  b  b  b  b  b  b  b	.
+7  b  b  b  .  b  w  .	.
+Score: white 12, black 38
+Computer making move: [0, 2]
+   0  1  2  3  4  5  6	7
+0  b  b  b  b  b  b  .	.
+1  .  b  b  b  b  b  .	.
+2  b  b  b  w  b  b  b	b
+3  b  w  b  b  w  w  b	.
+4  b  b  b  w  b  w  .	.
+5  b  b  b  w  b  b  b	.
+6  b  b  b  b  b  b  b	.
+7  b  b  b  .  b  w  .	.
+Score: white 8, black 43
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 5 7
+   0  1  2  3  4  5  6	7
+0  b  b  b  b  b  b  .	.
+1  .  b  b  b  b  b  .	.
+2  b  b  b  w  b  b  b	b
+3  b  w  b  b  w  w  b	.
+4  b  b  b  w  b  w  .	.
+5  b  b  b  w  w  w  w	w
+6  b  b  b  b  b  b  w	.
+7  b  b  b  .  b  w  .	.
+Score: white 13, black 39
+Computer making move: [6, 7]
+   0  1  2  3  4  5  6	7
+0  b  b  b  b  b  b  .	.
+1  .  b  b  b  b  b  .	.
+2  b  b  b  b  b  b  b	b
+3  b  w  b  b  b  w  b	.
+4  b  b  b  w  b  b  .	.
+5  b  b  b  w  w  w  b	w
+6  b  b  b  b  b  b  b	b
+7  b  b  b  .  b  w  .	.
+Score: white 8, black 45
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 7 7
+   0  1  2  3  4  5  6	7
+0  b  b  b  b  b  b  .	.
+1  .  b  b  b  b  b  .	.
+2  b  b  b  b  b  b  b	b
+3  b  w  b  b  b  w  b	.
+4  b  b  b  w  b  b  .	.
+5  b  b  b  w  w  w  b	w
+6  b  b  b  b  b  b  w	w
+7  b  b  b  .  b  w  .	w
+Score: white 11, black 43
+Computer making move: [4, 6]
+   0  1  2  3  4  5  6	7
+0  b  b  b  b  b  b  .	.
+1  .  b  b  b  b  b  .	.
+2  b  b  b  b  b  b  b	b
+3  b  w  b  b  b  b  b	.
+4  b  b  b  w  b  b  b	.
+5  b  b  b  w  w  b  b	w
+6  b  b  b  b  b  b  w	w
+7  b  b  b  .  b  w  .	w
+Score: white 9, black 46
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 1 7
+   0  1  2  3  4  5  6	7
+0  b  b  b  b  b  b  .	.
+1  .  b  b  b  b  b  .	w
+2  b  b  b  b  b  b  w	b
+3  b  w  b  b  b  w  b	.
+4  b  b  b  w  w  b  b	.
+5  b  b  b  w  w  b  b	w
+6  b  b  b  b  b  b  w	w
+7  b  b  b  .  b  w  .	w
+Score: white 13, black 43
+Computer making move: [7, 6]
+   0  1  2  3  4  5  6	7
+0  b  b  b  b  b  b  .	.
+1  .  b  b  b  b  b  .	w
+2  b  b  b  b  b  b  w	b
+3  b  w  b  b  b  w  b	.
+4  b  b  b  w  w  b  b	.
+5  b  b  b  w  w  b  b	w
+6  b  b  b  b  b  b  b	w
+7  b  b  b  .  b  b  b	w
+Score: white 11, black 46
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 7 3
+   0  1  2  3  4  5  6	7
+0  b  b  b  b  b  b  .	.
+1  .  b  b  b  b  b  .	w
+2  b  b  b  b  b  b  w	b
+3  b  w  b  b  b  w  b	.
+4  b  b  b  w  w  b  b	.
+5  b  b  b  w  w  b  b	w
+6  b  b  b  w  b  b  b	w
+7  b  b  b  w  w  w  w	w
+Score: white 16, black 42
+Computer making move: [0, 7]
+   0  1  2  3  4  5  6	7
+0  b  b  b  b  b  b  .	b
+1  .  b  b  b  b  b  .	b
+2  b  b  b  b  b  b  w	b
+3  b  w  b  b  b  w  b	.
+4  b  b  b  w  w  b  b	.
+5  b  b  b  w  w  b  b	w
+6  b  b  b  w  b  b  b	w
+7  b  b  b  w  w  w  w	w
+Score: white 15, black 44
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: 4 7
+   0  1  2  3  4  5  6	7
+0  b  b  b  b  b  b  .	b
+1  .  b  b  b  b  b  .	b
+2  b  b  b  b  b  b  w	b
+3  b  w  b  b  b  w  b	.
+4  b  b  b  w  w  w  w	w
+5  b  b  b  w  w  b  w	w
+6  b  b  b  w  b  w  b	w
+7  b  b  b  w  w  w  w	w
+Score: white 20, black 40
+Computer making move: [3, 7]
+   0  1  2  3  4  5  6	7
+0  b  b  b  b  b  b  .	b
+1  .  b  b  b  b  b  .	b
+2  b  b  b  b  b  b  b	b
+3  b  w  b  b  b  w  b	b
+4  b  b  b  w  w  w  b	w
+5  b  b  b  w  w  b  w	w
+6  b  b  b  w  b  w  b	w
+7  b  b  b  w  w  w  w	w
+Score: white 18, black 43
+Game over!
+   0  1  2  3  4  5  6	7
+0  b  b  b  b  b  b  .	b
+1  .  b  b  b  b  b  .	b
+2  b  b  b  b  b  b  b	b
+3  b  w  b  b  b  w  b	b
+4  b  b  b  w  w  w  b	w
+5  b  b  b  w  w  b  w	w
+6  b  b  b  w  b  w  b	w
+7  b  b  b  w  w  w  w	w
+Score: white 18, black 43
+Do you want to play again (y/n)? y
+Starting new game!
+Enter the board size, which is an integer between [4,20] inclusive: 8
+Black goes first, then white
+Enter 'b' to choose to play black, 'w' to choose white: b
+Enter '1' to choose easy computer opponent, '2' for hard computer opponent: 1
+   0  1  2  3  4  5  6	7
+0  .  .  .  .  .  .  .	.
+1  .  .  .  .  .  .  .	.
+2  .  .  .  .  .  .  .	.
+3  .  .  .  w  b  .  .	.
+4  .  .  .  b  w  .  .	.
+5  .  .  .  .  .  .  .	.
+6  .  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 2, black 2
+Enter 2 numbers from 0-7 separated by a space to make a move,
+  where the first number is the row and the second number is the column
+Enter 'q' to quit.
+Enter move: q
+Game over!
+   0  1  2  3  4  5  6	7
+0  .  .  .  .  .  .  .	.
+1  .  .  .  .  .  .  .	.
+2  .  .  .  .  .  .  .	.
+3  .  .  .  w  b  .  .	.
+4  .  .  .  b  w  .  .	.
+5  .  .  .  .  .  .  .	.
+6  .  .  .  .  .  .  .	.
+7  .  .  .  .  .  .  .	.
+Score: white 2, black 2
+Do you want to play again (y/n)? n
+Goodbye!
+

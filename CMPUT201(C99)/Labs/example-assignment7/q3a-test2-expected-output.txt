@@ -1,0 +1,4 @@
+Enter a string no more than 16 chars long
+0123456789012345
+BufferStack: one two three
+BufferHeap: one two three

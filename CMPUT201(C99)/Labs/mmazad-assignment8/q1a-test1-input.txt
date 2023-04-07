@@ -1,0 +1,3 @@
+string Name
+5
+Pikachu Raichu Jigglypuff Charmander Bulbasaur

@@ -1,0 +1,6 @@
+string Name
+5
+Pikachu Raichu Jigglypuff Charmander Bulbasaur
+long Magnitude
+4
+0 10 100 1000 

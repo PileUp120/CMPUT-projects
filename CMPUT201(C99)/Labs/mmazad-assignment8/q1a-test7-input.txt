@@ -1,0 +1,15 @@
+string profs
+2
+Abram Hazel
+string verb
+2
+taught lectured
+string about
+1
+about
+string topic
+4
+makefiles debugging wizardry sanitize
+string when
+2
+yesterday today

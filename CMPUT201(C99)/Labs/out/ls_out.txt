@@ -1,0 +1,6 @@
+total 6
+ 55 2 c201
+113 1 demosteps.txt
+ 89 1 lab1submit.tar
+122 1 ls_out.txt
+ 94 2 test

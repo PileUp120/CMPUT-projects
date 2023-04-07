@@ -1,0 +1,14 @@
+[CONSTRUCTIVE PCG]
+*Cellular Automata - At each position, make decision based on rules.
+*Generative Grammar - Make combinations based on some rules
+*Constraint-satisfaction Problems - Dense collection of rules, where each slot stores every possible solution until there’s only one
+possible solution.
+[SEARCH BASED]
+*Genetic Algorithms - also called Evolutionary Search, works based on some function
+*Simulated Anneling - A combination of random walk and greedy search
+
+
+
+
+
+Fitness Function (F): A function that maps each entity F(e)-> to some numeric value

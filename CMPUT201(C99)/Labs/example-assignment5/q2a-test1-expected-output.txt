@@ -1,0 +1,8 @@
+Enter first string
+Enter second string
+STRCAT
+String after concatenation: HelloWorld
+STRFIND
+Enter string you want to look up in:
+Enter string you want to look up for:
+String found at index: 5

@@ -1,0 +1,64 @@
+char bit16
+2
+0
+1
+char bit15
+2
+0
+1
+char bit14
+2
+0
+1
+char bit13
+2
+0
+1
+char bit12
+2
+0
+1
+char bit11
+2
+0
+1
+char bit10
+2
+0
+1
+char bit09
+2
+0
+1
+char bit08
+2
+0
+1
+char bit07
+2
+0
+1
+char bit06
+2
+0
+1
+char bit05
+2
+0
+1
+char bit04
+2
+0
+1
+char bit03
+2
+0
+1
+char bit02
+2
+0
+1
+char bit01
+2
+0
+1

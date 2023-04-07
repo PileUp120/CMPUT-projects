@@ -1,0 +1,7 @@
+Enter first string
+Enter second string
+STRCAT
+String after concatenation: Java, C++!!C Programming
+STRFIND
+Enter string you want to look up in:
+Invalid input!

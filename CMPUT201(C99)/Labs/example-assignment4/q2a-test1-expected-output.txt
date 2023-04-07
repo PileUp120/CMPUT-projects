@@ -1,0 +1,14 @@
+What is the seed?
+What is coeffecient1?
+What is coeffecient2?
+How many numbers?
+1
+5
+9
+9
+1
+1
+5
+3
+9
+7

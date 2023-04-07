@@ -1,0 +1,21 @@
+Enter the number to call a function
+1-addFront
+2-addBack
+3-printSqueue forward
+4-printSqueue backward
+5-reverseSqueue
+0-quit
+Enter option
+Enter value
+Enter option
+Enter value
+Enter option
+Printing Forward
+alpha
+beta
+Enter option
+Printing Backward
+beta
+alpha
+Enter option
+Invalid option!
